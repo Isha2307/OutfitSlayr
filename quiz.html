@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discover My Style - OutfitSlayr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradient-bg" style="padding:20px;">
+
+<div style="text-align:center;">
+    <a href="index.html" style="color:#ff69b4; font-weight:bold;">← Back to Home</a>
+</div>
+
+<div class="quiz-container">
+
+    <h2 style="text-align:center; color:#ff69b4;">What's your color vibe?</h2>
+
+    <button onclick="nextQuestion()" class="btn-primary" style="width:100%; margin:10px 0;">🖤 Dark Drama</button>
+    <button onclick="nextQuestion()" class="btn-primary" style="width:100%; margin:10px 0;">💕 Pastel Dreams</button>
+    <button onclick="nextQuestion()" class="btn-primary" style="width:100%; margin:10px 0;">🌿 Earthy Vibes</button>
+    <button onclick="nextQuestion()" class="btn-primary" style="width:100%; margin:10px 0;">✨ Bright Pop</button>
+
+    <div class="progress">
+        <div class="progress-bar"></div>
+    </div>
+
+</div>
+
+<script>
+let progress = 25;
+function nextQuestion(){
+    progress += 25;
+    document.querySelector('.progress-bar').style.width = progress + "%";
+    if(progress > 100){
+        alert("🎉 Your Style: Gothic Queen!");
+    }
+}
+</script>
+
+</body>
+</html>
