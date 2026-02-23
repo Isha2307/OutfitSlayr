@@ -4,37 +4,47 @@
     <title>Discover My Style - OutfitSlayr</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="gradient-bg" style="padding:20px;">
 
-<div style="text-align:center;">
-    <a href="index.html" style="color:#ff69b4; font-weight:bold;">← Back to Home</a>
-</div>
+<body class="gradient-bg">
 
-<div class="quiz-container">
-
-    <h2 style="text-align:center; color:#ff69b4;">What's your color vibe?</h2>
-
-    <button onclick="nextQuestion()" class="btn-primary" style="width:100%; margin:10px 0;">🖤 Dark Drama</button>
-    <button onclick="nextQuestion()" class="btn-primary" style="width:100%; margin:10px 0;">💕 Pastel Dreams</button>
-    <button onclick="nextQuestion()" class="btn-primary" style="width:100%; margin:10px 0;">🌿 Earthy Vibes</button>
-    <button onclick="nextQuestion()" class="btn-primary" style="width:100%; margin:10px 0;">✨ Bright Pop</button>
-
-    <div class="progress">
-        <div class="progress-bar"></div>
+    <!-- Back Button -->
+    <div style="text-align:center; margin-top:60px;">
+        <a href="index.html" class="back-btn">← Back to Home</a>
     </div>
 
-</div>
+    <!-- Quiz Container -->
+    <div class="quiz-container">
 
-<script>
-let progress = 25;
-function nextQuestion(){
-    progress += 25;
-    document.querySelector('.progress-bar').style.width = progress + "%";
-    if(progress > 100){
-        alert("🎉 Your Style: Gothic Queen!");
-    }
-}
-</script>
+        <h2 style="text-align:center; color:#ff69b4; margin-bottom:30px;">
+            What's your color vibe?
+        </h2>
+
+        <!-- Options -->
+        <a href="styles.html"
+           class="btn-primary"
+           style="width:100%; display:block; margin:12px 0; text-align:center; padding:18px;">
+            🖤 Dark Drama
+        </a>
+
+        <a href="styles.html"
+           class="btn-primary"
+           style="width:100%; display:block; margin:12px 0; text-align:center; padding:18px;">
+            💕 Pastel Dreams
+        </a>
+
+        <a href="styles.html"
+           class="btn-primary"
+           style="width:100%; display:block; margin:12px 0; text-align:center; padding:18px;">
+            🌿 Earthy Vibes
+        </a>
+
+        <a href="styles.html"
+           class="btn-primary"
+           style="width:100%; display:block; margin:12px 0; text-align:center; padding:18px;">
+            ✨ Bright Pop
+        </a>
+
+    </div>
 
 </body>
 </html>
